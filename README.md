@@ -61,9 +61,10 @@ Para realizar lo visto en el webinar, sigue estos pasos:
 1.	Ingresar al servicio **CloudShell.** Se puede ingresar desde la opción que se encuentra en la esquina inferior izquierda de la ventana o abriéndolo como cualquier otro servicio de AWS. Si desea también puede usar el CLI desde el equipo local ingresando la información necesaria para conectarse a la cuenta de AWS donde se encuentra la aplicación.
 2.	Ingresar el siguiente commando:
 
-` ` `
+```
 aws xray get-trace-summaries --start-time 2024-04-03T15:10:00-05:00 --end-time 2024-04-03T15:15:59-05:00 --region us-east-1 --output json
-` ` `
+
+```
 
 Reemplazar los datos de **región (--region), fecha y tiempo (--start-time --end-time)** acorde al ejercicio actual. También se puede cambiar el formato de **entrega (--output)** json por las opciones table o text. Este comando entrega una lista, en formato json, de las trazas que están disponibles en el período de tiempo y región definidos. Explorar cuántas trazas y que información de cada traza se muestra.
 
@@ -71,9 +72,9 @@ Reemplazar los datos de **región (--region), fecha y tiempo (--start-time --end
    
 4.	Ingresar el siguiente commando:
 
-` ` `
+```
 aws xray get-trace-graph --trace-ids 1-660dbff1-29799005761ba9c76f2d67b4 --region us-east-1 --output json
-` ` `
+```
 
 Reemplazar el dato de **región (--region)** acorde al ejercicio actual. También se puede cambiar el formato de **entrega (--output)** json por las opciones table o text. Reemplazar el **ID de traza (--trace-ids)** del comando por el **ID** copiado en el bloc de notas. Este comando entrega información detallada de la traza consultada, como segmentos, subsegmentos, latencia, etc. Explorar que otra información de la traza se muestra.
 
