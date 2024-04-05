@@ -29,7 +29,7 @@ Antes de comenzar, asegúrate de cumplir con los siguientes requisitos:
 
 Para realizar lo visto en el webinar, sigue estos pasos:
 
-**Recomendación:** seguir estas instrucciones acompañado del video del webinar *(disponible aquí el viernes 5 de abril en la mañana)*, donde hay más detalles y explicaciones.
+**Recomendación:** seguir estas instrucciones acompañado del [video del webinar](https://drive.google.com/file/d/1SGKpWTkUjZKbAwm5rmrvBSdiApdCsPDn/view?usp=drive_link), donde hay más detalles y explicaciones.
 
 ### Interacción en consola
 
@@ -63,7 +63,6 @@ Para realizar lo visto en el webinar, sigue estos pasos:
 
 ```
 aws xray get-trace-summaries --start-time 2024-04-03T15:10:00-05:00 --end-time 2024-04-03T15:15:59-05:00 --region us-east-1 --output json
-
 ```
 
 Reemplazar los datos de **región (--region), fecha y tiempo (--start-time --end-time)** acorde al ejercicio actual. También se puede cambiar el formato de **entrega (--output)** json por las opciones table o text. Este comando entrega una lista, en formato json, de las trazas que están disponibles en el período de tiempo y región definidos. Explorar cuántas trazas y que información de cada traza se muestra.
